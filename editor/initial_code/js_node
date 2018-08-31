@@ -1,0 +1,25 @@
+"use strict";
+
+function key(grid, path) {
+    // your code here
+    return 0;
+}
+
+var assert = require('assert');
+if (!global.is_checking) {
+    console.log('Example:')
+    console.log(key([[1, 6, 7, 2, 4],
+                     [0, 4, 9, 5, 3],
+                     [7, 2, 5, 1, 4],
+                     [3, 3, 2, 2, 9],
+                     [2, 6, 1, 4, 0]], 9))
+
+    // These "asserts" are used for self-checking and not for an auto-testing
+    assert.equal(key([[1, 6, 7, 2, 4],
+                      [0, 4, 9, 5, 3],
+                      [7, 2, 5, 1, 4],
+                      [3, 3, 2, 2, 9],
+                      [2, 6, 1, 4, 0]], 9), 44)
+    console.log("Coding complete? Click 'Check' to earn cool rewards!");
+}
+
