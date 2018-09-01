@@ -8,8 +8,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             multipleArguments: true,
             functions: {
-                python: 'key',
-                js: 'key'
+                python: 'g_key',
+                js: 'gKey'
             }
         });
         io.start();

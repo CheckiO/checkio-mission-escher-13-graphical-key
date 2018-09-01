@@ -38,8 +38,8 @@ api.add_listener(
     CheckiOReferee(
         tests=TESTS,
         function_name={
-            "python": "key",
-            "js": "key"
+            "python": "g_key",
+            "js": "gKey"
         },
         cover_code={
             'python-3': cover_codes.unwrap_args,

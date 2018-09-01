@@ -1,19 +1,19 @@
-def key(grid, path):
+def g_key(grid, path):
     #replace this for solution
     return 0
 
 if __name__ == '__main__':
     print("Example:")
-    print(key([[1, 6, 7, 2, 4],
-               [0, 4, 9, 5, 3],
-               [7, 2, 5, 1, 4],
-               [3, 3, 2, 2, 9],
-               [2, 6, 1, 4, 0]], 9))
+    print(g_key([[1, 6, 7, 2, 4],
+                 [0, 4, 9, 5, 3],
+                 [7, 2, 5, 1, 4],
+                 [3, 3, 2, 2, 9],
+                 [2, 6, 1, 4, 0]], 9))
 
     #These "asserts" using only for self-checking and not necessary for auto-testing
-    assert key([[1, 6, 7, 2, 4],
-                [0, 4, 9, 5, 3],
-                [7, 2, 5, 1, 4],
-                [3, 3, 2, 2, 9],
-                [2, 6, 1, 4, 0]], 9) == 44
+    assert g_key([[1, 6, 7, 2, 4],
+                  [0, 4, 9, 5, 3],
+                  [7, 2, 5, 1, 4],
+                  [3, 3, 2, 2, 9],
+                  [2, 6, 1, 4, 0]], 9) == 44
     print("Coding complete? Click 'Check' to earn cool rewards!")
