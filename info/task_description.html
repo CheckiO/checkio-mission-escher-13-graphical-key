@@ -1,6 +1,6 @@
 <!-- Describe task in general -->
 
-<img class="for_info_only half" src="{{MEDIA}}key.png" style="float:left;max-height: 400px">
+<img class="for_info_only half" src="{{MEDIA}}key.jpg" style="float:left;max-height: 400px">
 
 <div class="story for_info_only">
 As soon as the buttons were pressed in the correct order, the floor beneath you swiftly broke apart and you fell into a deeper level of the dungeon. This castle still hasn’t ceased to surprise you! Fortunately, you didn’t hurt yourself during the fall, otherwise you could’ve forget about ever going home.<br>
@@ -15,6 +15,10 @@ As soon as you’ve touched the screen, each point turned into a digit. Probably
 <p>
 Your task is to write a function that accepts a set of digits (a two-dimensional array) as an argument, and then returns the sum of the digits on the direction from the upper-left corner to the lower right so that the sum is maximum. At the same time, you can visit no more than N points, taking into account the first and the last one. You can move in any of the 8 directions (horizontally, vertically and diagonally).
 </p>
+
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}g_key.jpg" style="max-height: 200px">
+</div>
 
 <!-- Explain input and output values -->
 <p>
@@ -37,7 +41,7 @@ gKey([[1, 6, 7, 2, 4],
       [0, 4, 9, 5, 3],
       [7, 2, 5, 1, 4],
       [3, 3, 2, 2, 9],
-      [2, 6, 1, 4, 0]], 9) == 44
+      [2, 6, 1, 4, 0]], 9) == 45
 
 </pre>
 {% else %}
@@ -46,7 +50,7 @@ g_key([[1, 6, 7, 2, 4],
        [0, 4, 9, 5, 3],
        [7, 2, 5, 1, 4],
        [3, 3, 2, 2, 9],
-       [2, 6, 1, 4, 0]], 9) == 44
+       [2, 6, 1, 4, 0]], 9) == 45
 </pre>
 {% endif %}
 </div>
@@ -61,5 +65,5 @@ g_key([[1, 6, 7, 2, 4],
 <!-- Here you can explain some constraints for input-->
 <!-- The section is optional -->
 <p><strong>Precondition</strong>:<br>
-    grid size == 5x5
+    2x2 <= grid size <= 5x5
 </p>
