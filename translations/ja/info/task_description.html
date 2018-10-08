@@ -1,0 +1,89 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}key.jpg" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+正しい順番でボタンを押すと同時に急に足元の床が崩れ
+あなたは地下牢のより深い階層に落ちて行きました。
+この城はまだあなたを驚かすのを止めてはいなかったのです!
+幸運にも落下による怪我はありませんでした。
+さもなければあなたは家に帰る必要がなくなっていたでしょう。<br>
+<br>
+あなたは立ち上がって落ち着きを取り戻すと想像も付かない宝物を背後に隠しているかのようなドアを発見しました。
+それは巨大かつ金属製で数世紀を経たにもかかわらずただ一点の錆もありません。
+二つのことが考えられます。
+「ステンレス製である」、
+「何年にもわたって誰かが手入れをしてきた」
+あなたは最初の考えが真実であって欲しいと思いました。
+亡霊と出会うのは一回で充分ですから。<br>
+<br>
+このドアには鍵穴に似た様なものさえありませんでした。
+しかし突起をもつタッチスクリーンのような場所がありました。
+あるパターンを描けば解錠できるロックに似ています。
+どこからこの古城にそのようなテクノロジーがもたらされたのでしょうか?
+無数のとりとめもない考えが浮かんでは消えましたが全ては帰還するまで保留できることです。今の優先事項はこのドアを開けることです。<br>
+<br>
+スクリーンに触れると各点は数値に変化しました。
+恐らく解錠のためのパターンを描く必要があるようです。
+「例外...(Except...)」数値の選び方に何か法則性があるのでしょう?
+</div>
+
+<p>
+あなたの仕事は数値の集合の 2次元配列 ( 第1引数 ) を受け取り、
+左上角から右下角へたどる場合の数値の合計の最大値を返す関数を書くことです。
+またその際 N個 ( 第2引数 ) より多くの点を訪れてはなりません。
+それには開始点と終了点を含みます。
+8方向 ( 縦, 横, 斜め )に移動可能です。
+</p>
+
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}gkey.jpg" style="max-height: 200px">
+</div>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>入力: </strong> 数値の配列, 経路の長さ ( 注: 開始点(左上角)と終了点(右下角)を含む点の総数 )
+</p>
+
+<p>
+    <strong>出力: </strong> 経路上の数値の合計 ( 最大値 ) 
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>例:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+gKey([[1, 6, 7, 2, 4],
+      [0, 4, 9, 5, 3],
+      [7, 2, 5, 1, 4],
+      [3, 3, 2, 2, 9],
+      [2, 6, 1, 4, 0]], 9) == 46
+
+</pre>
+{% else %}
+<pre class="brush: python">
+g_key([[1, 6, 7, 2, 4],
+       [0, 4, 9, 5, 3],
+       [7, 2, 5, 1, 4],
+       [3, 3, 2, 2, 9],
+       [2, 6, 1, 4, 0]], 9) == 46
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+    経路探索に使用できます。
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>事前条件</strong>:<br>
+    2x2 <= grid size <= 5x5
+</p>
