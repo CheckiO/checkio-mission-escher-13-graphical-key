@@ -112,7 +112,7 @@ requirejs(['ext_editor_io', 'jquery_190', 'raphael_210'],
             },
             animation: function($expl, data){
                 graphicalKeyCanvas($expl[0],
-                    data.in[0], data.ext.explanation);
+                    data.in[0], data.ext && data.ext.explanation);
             }
         });
         io.start();
